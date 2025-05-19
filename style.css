@@ -1,0 +1,136 @@
+/*====================
+  CSS VARIABLES
+====================*/
+/* 
+ * CSS variables (--name) store reusable values like colors
+ * Access them with var(--name) anywhere in your CSS
+ * This makes it easy to maintain consistent colors
+ * and update them in one place instead of throughout the code
+ */
+:root {
+      --white: hsl(0, 0%, 100%);      /* White background for card */
+      --slate-300: hsl(212, 45%, 89%); /* Light blue for page background */
+      --slate-500: hsl(216, 15%, 48%); /* Medium slate for paragraph text */
+      --slate-900: hsl(218, 44%, 22%); /* Dark slate for headings */
+}
+
+/*====================
+  BASE LAYOUT
+====================*/
+/* 
+ * Centers the content both vertically and horizontally
+ * using flexbox for a clean, responsive layout
+ */
+body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--slate-300);
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+
+/*====================
+  QR CODE CONTAINER
+====================*/
+/* 
+ * Card component that holds the QR code and text
+ * Mobile-first approach starting at 320px width
+ */
+.container {
+      width: 320px;
+      max-width: 85%;
+      margin: 0 auto;
+      background-color: var(--white);
+      border-radius: 20px;
+      padding: 1.25rem; /* 20px for spacing */
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+      text-align: center;
+}
+
+/*====================
+  TYPOGRAPHY
+====================*/
+/* 
+ * Paragraph text styling - 15px as per design spec
+ * Medium slate color for better readability
+ */
+p {
+      font-size: 15px;
+      color: var(--slate-500);
+      text-align: center;
+      line-height: 1.5;
+      padding: 0 0.5rem 0.5rem;
+      margin-bottom: 1rem;
+}
+
+/* 
+ * Heading styling with 700 weight (bold) as per design spec
+ * Dark slate color for clear hierarchy
+ */
+h1 {
+      color: var(--slate-900);
+      font-weight: 700;
+      text-align: center;
+      font-size: 22px;
+      letter-spacing: 0;
+      line-height: 120%;
+      margin: 1.25rem 0.5rem 1rem;
+}
+
+/*====================
+  IMAGES
+====================*/
+/* 
+ * QR code image takes full width of container
+ * with slight rounding to match container style
+ */
+img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+      display: block;
+}
+
+/*====================
+  RESPONSIVE STYLES
+====================*/
+/* 
+ * Mobile breakpoint (375px) as per design spec
+ * Slightly increases container width
+ */
+@media screen and (min-width: 375px) {
+      .container {
+            width: 340px;
+      }
+}
+
+/* 
+ * Desktop breakpoint (1440px) as per design spec
+ * Further adjusts container width
+ */
+@media screen and (min-width: 1440px) {
+      .container {
+            width: 360px;
+      }
+}
+
+/*====================
+  ATTRIBUTION
+====================*/
+/* 
+ * Credit styling for Frontend Mentor challenge
+ */
+.attribution {
+      font-size: 11px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 2rem;
+}
+
+.attribution a {
+      color: hsl(228, 45%, 44%);
+}
