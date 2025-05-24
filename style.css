@@ -1,3 +1,20 @@
+
+/*====================
+  Calculate REM
+====================*/
+/* Ex: rem to px conversion
+      1rem = 16px
+      0.5rem = 8px
+      1.25rem = 20px
+      1.5rem = 24px 
+
+   The formula: rem = pixels ÷ 16
+      ex:   16 / 16 = 1rem
+            8 / 16 = 0.5rem
+            20 / 16 = 1.25rem
+            24 / 16 = 1.5rem
+*/
+
 /*====================
   CSS VARIABLES
 ====================*/
@@ -8,10 +25,10 @@
  * and update them in one place instead of throughout the code
  */
 :root {
-      --white: hsl(0, 0%, 100%);      /* White background for card */
-      --slate-300: hsl(212, 45%, 89%); /* Light blue for page background */
-      --slate-500: hsl(216, 15%, 48%); /* Medium slate for paragraph text */
-      --slate-900: hsl(218, 44%, 22%); /* Dark slate for headings */
+  --white: hsl(0, 0%, 100%); /* White background for card */
+  --slate-300: hsl(212, 45%, 89%); /* Light blue for page background */
+  --slate-500: hsl(216, 15%, 48%); /* Medium slate for paragraph text */
+  --slate-900: hsl(218, 44%, 22%); /* Dark slate for headings */
 }
 
 /*====================
@@ -22,15 +39,15 @@
  * using flexbox for a clean, responsive layout
  */
 body {
-      font-family: 'Outfit', sans-serif;
-      background-color: var(--slate-300);
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--slate-300);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /*====================
@@ -41,14 +58,14 @@ body {
  * Mobile-first approach starting at 320px width
  */
 .container {
-      width: 320px;
-      max-width: 85%;
-      margin: 0 auto;
-      background-color: var(--white);
-      border-radius: 20px;
-      padding: 1.25rem; /* 20px for spacing */
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-      text-align: center;
+  width: 320px;
+  max-width: 85%;
+  margin: 0 auto;
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 1.25rem; /* 20px for spacing */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
 }
 
 /*====================
@@ -59,12 +76,12 @@ body {
  * Medium slate color for better readability
  */
 p {
-      font-size: 15px;
-      color: var(--slate-500);
-      text-align: center;
-      line-height: 1.5;
-      padding: 0 0.5rem 0.5rem;
-      margin-bottom: 1rem;
+  font-size: 15px;
+  color: var(--slate-500);
+  text-align: center;
+  line-height: 1.5;
+  padding: 0 0.5rem 0.5rem;
+  margin-bottom: 1rem;
 }
 
 /* 
@@ -72,13 +89,13 @@ p {
  * Dark slate color for clear hierarchy
  */
 h1 {
-      color: var(--slate-900);
-      font-weight: 700;
-      text-align: center;
-      font-size: 22px;
-      letter-spacing: 0;
-      line-height: 120%;
-      margin: 1.25rem 0.5rem 1rem;
+  color: var(--slate-900);
+  font-weight: 700;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 120%;
+  margin: 1.25rem 0.5rem 1rem;
 }
 
 /*====================
@@ -89,10 +106,10 @@ h1 {
  * with slight rounding to match container style
  */
 img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 1.5rem;
-      display: block;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  display: block;
 }
 
 /*====================
@@ -103,9 +120,9 @@ img {
  * Slightly increases container width
  */
 @media screen and (min-width: 375px) {
-      .container {
-            width: 340px;
-      }
+  .container {
+    width: 340px;
+  }
 }
 
 /* 
@@ -113,9 +130,9 @@ img {
  * Further adjusts container width
  */
 @media screen and (min-width: 1440px) {
-      .container {
-            width: 360px;
-      }
+  .container {
+    width: 360px;
+  }
 }
 
 /*====================
@@ -125,12 +142,12 @@ img {
  * Credit styling for Frontend Mentor challenge
  */
 .attribution {
-      font-size: 11px;
-      font-weight: bold;
-      text-align: center;
-      margin-top: 2rem;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 .attribution a {
-      color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
 }

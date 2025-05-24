@@ -1,6 +1,6 @@
 # Frontend Mentor - QR code component solution 2025
 
-This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -20,7 +20,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![](qr-code-nn.png)
+![QR Code Component Screenshot](qr-code-nn.png)
 
 ### Links
 
@@ -48,8 +48,7 @@ During this project, I learned several important concepts:
 
 ```html
 <div class="container">
-      <img src="./images/image-qr-code.png" alt="QR code" class="QR Code to Frontend Mentor Website">
-      <h1>Improve your front-end skills by building projects</h1>
+<img src="./images/image-qr-code.png" alt="QR Code to Frontend Mentor Website" class="qr-code">      <h1>Improve your front-end skills by building projects</h1>
       <p>Scan QR code to visit Frontend Mentor and take your coding skills to the next level</p>
 </div>
 ```
@@ -108,3 +107,4 @@ in future projects, i want to focus on:
 - Website - [Nisha Najihah](https://www.your-site.com)
 - Frontend Mentor - [@nishanajihah](https://www.frontendmentor.io/profile/nishanajihah)
 - Linktree - [@nisha.najihah](https://linktr.ee/nisha.najihah)
+
