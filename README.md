@@ -24,8 +24,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Code](https://github.com/nishanajihah/qr-code-component-nn)
-<!-- - Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
+- Solution Github: [Code](https://github.com/nishanajihah/qr-code-component-nn)
+- Live View: [QR Code Component - Nisha Najihah](https://qr-code-component-nn.vercel.app/)
 
 ## My process
 
